@@ -4,6 +4,8 @@
   <link rel="stylesheet" href="stylesheets/app.css">
   <script src="javascripts/vendor.js"></script>
   <script src="javascripts/app.js"></script>
+  <script src="javascripts/segment.min.js"></script>
+  <script src="javascripts/ease.min.js"></script>
   <script>
     require('initialize');
     
@@ -12,15 +14,16 @@
 <body>
   <div class="preloader preloader-active"><img src="images/preloader.gif"></div>
   <div id="menu">
-    <div class="close">+</div>
-    <div class="links"><a href="index.html" class="pink">Работы</a><a href="about-us.html">О нас</a><a class="contact">Контакты</a></div>
-    <div class="flex-inner-cont">
-      <div class="social"><a href=""><img src="images/vk.svg" class="svg"></a><a href=""><img src="images/fb.svg" class="svg"></a><a href=""><img src="images/twitter.svg" class="svg"></a><a href=""><img src="images/youtube.svg" class="svg"></a></div>
-      <div class="contacts">
-        <div class="addres">Россия, Ростов-на-Дону, ул. Пушкинская, 157</div>
-        <div class="numbers">
-          <div class="one">+7 863 264 94 89</div>
-          <div class="two">+7 919 894 44 44</div>
+    <div class="container">
+      <div class="links"><a href="index.html" class="pink">Работы</a><a href="about-us.html">О нас</a><a class="contact">Контакты</a></div>
+      <div class="flex-inner-cont">
+        <div class="social"><a href=""><img src="images/vk.svg" class="svg"></a><a href=""><img src="images/fb.svg" class="svg"></a><a href=""><img src="images/twitter.svg" class="svg"></a><a href=""><img src="images/youtube.svg" class="svg"></a></div>
+        <div class="contacts">
+          <div class="addres">Россия, Ростов-на-Дону, ул. Пушкинская, 157</div>
+          <div class="numbers">
+            <div class="one">+7 863 264 94 89</div>
+            <div class="two">+7 919 894 44 44</div>
+          </div>
         </div>
       </div>
     </div>
@@ -29,7 +32,13 @@
     <div class="head">
       <header class="header">
         <div class="container"><a href="" class="logo"><img src="images/logo.svg" class="svg"></a>
-          <div class="menu"><img src="images/burger.svg" alt="" class="svg"></div>
+          <div class="menu">
+            <svg width="100px" height="100px">
+              <path id="pathA" d="M 30 40 L 70 40 C 90 40 90 75 60 85 A 40 40 0 0 1 20 20 L 80 80"></path>
+              <path id="pathB" d="M 30 50 L 70 50"></path>
+              <path id="pathC" d="M 70 60 L 30 60 C 10 60 10 20 40 15 A 40 38 0 1 1 20 80 L 80 20"></path>
+            </svg>
+          </div>
         </div>
       </header>
       <div class="main">    
